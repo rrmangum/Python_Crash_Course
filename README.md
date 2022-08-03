@@ -6,12 +6,12 @@ This repo is a collection of Python learning and practice exercises from this [b
 
 # Topics
 
-* Chapter 2: Variables and Simple Data Types
-* Chapter 3: Introducing Lists
-* Chapter 4: Working With Lists
-* Chapter 5: If Statements
-* Chapter 6: Dictionaries
-* Chapter 7: User Input and While Loops
+* [Chapter 2: Variables and Simple Data Types](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_2.py)
+* [Chapter 3: Introducing Lists](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_3.py)
+* [Chapter 4: Working With Lists](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_4.py)
+* [Chapter 5: If Statements](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_5.py)
+* [Chapter 6: Dictionaries](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_6.py)
+* [Chapter 7: User Input and While Loops](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_7.py)
 * Chapter 8: Functions
 * Chapter 9: Classes
 * Chapter 10: Files and Exceptions
