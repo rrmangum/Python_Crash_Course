@@ -180,7 +180,7 @@ print(multiplication)
 division = 16 / 2
 print(division)
 
-Exercise 2-9 Favaorite Number
+# Exercise 2-9 Favaorite Number
 favorite_number = 69
 print("My favorite number is, " + str(favorite_number) + "!")
 
