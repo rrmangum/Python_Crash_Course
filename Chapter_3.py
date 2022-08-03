@@ -6,13 +6,15 @@ bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles)
 
 # you can tell python to access any item in a list through its indexed position
-# write the name of the list followed by the index of the item enclosed in square brackets
+# write the name of the list followed by the index of the item enclosed in 
+# square brackets
 
 print(bicycles[0].title())
 print(bicycles[1].title())
 print(bicycles[2].title())
 
-# access the last element in a list through index -1; second to last item can be accessed by -2 and so on
+# access the last element in a list through index -1; second to last item can 
+# be accessed by -2 and so on
 print(bicycles[-1].title())
 message = "My first bicycle was a " + bicycles[0].title() + "."
 print(message)
@@ -37,26 +39,56 @@ printing each person's name, print a message to them. The text of each
 message should be the same, but each message should be personalized with the
 person's name.
 '''
-print("Hello " + ryan_friend_names[0].title() + ", it's nice to see you again.")
-print("Hello " + ryan_friend_names[1].title() + ", it's nice to see you again.")
-print("Hello " + ryan_friend_names[2].title() + ", it's nice to see you again.")
-print("Hello " + ryan_friend_names[3].title() + ", it's nice to see you again.")
-print("Hello " + ryan_friend_names[4].title() + ", it's nice to see you again.")
-print("Hello " + ryan_friend_names[5].title() + ", it's nice to see you again.")
+print("Hello " + 
+    ryan_friend_names[0].title() + 
+    ", it's nice to see you again."
+)
+print("Hello " + 
+    ryan_friend_names[1].title() + 
+    ", it's nice to see you again."
+)
+print("Hello " + 
+    ryan_friend_names[2].title() + 
+    ", it's nice to see you again."
+)
+print("Hello " + 
+    ryan_friend_names[3].title() + 
+        ", it's nice to see you again."
+)
+print("Hello " + 
+    ryan_friend_names[4].title() + 
+    ", it's nice to see you again."
+)
+print("Hello " + 
+    ryan_friend_names[5].title() + 
+    ", it's nice to see you again."
+)
 
 # Exercise 3-3 Your Own List
 '''
 Think of your favorite mode of transportation, such as a
 motorcycle or a car, and make a list that stores several examples. Use your list
-to print a series of statements about these items, such as “I would like to own a
-Honda motorcycle.”
+to print a series of statements about these items, such as “I would like to own 
+a Honda motorcycle.”
 '''
 vehicles = ['Sailboat', 'Tesla', 'Pickup Truck', 'Skateboard']
 
-print("I would love to own a " + vehicles[0].lower() + " and sail around the Hawaiian Islands")
-print("I would like to purchase a " + vehicles[1].lower() + " and save money on gasoline.")
-print("I will eventually buy an old " + vehicles[2].lower() + " and restore it to its former glory.")
-print("I used to " + vehicles[3].lower() + " with my younger brother.")
+print("I would love to own a " + 
+    vehicles[0].lower() + 
+    " and sail around the Hawaiian Islands"
+)
+print("I would like to purchase a " + 
+    vehicles[1].lower() + 
+    " and save money on gasoline."
+)
+print("I will eventually buy an old " + 
+    vehicles[2].lower() + 
+    " and restore it to its former glory."
+)
+print("I used to " + 
+    vehicles[3].lower() + 
+    " with my younger brother."
+)
 
 # update lists with a replaced value
 motorcycles = ['honda', 'yamaha', 'suzuki']
@@ -65,30 +97,35 @@ print(motorcycles)
 motorcycles[0] = 'ducati'
 print(motorcycles)
 
-# add elements to a list - append the item to the list, the new element is added to the end of the list
+# add elements to a list - append the item to the list, the new element is 
+# added to the end of the list
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.append('ducati')
 print(motorcycles)
 
-# you can create an empty list and then add data as you receive it once the program is running as expected. This puts the users in control
+# you can create an empty list and then add data as you receive it once the 
+# program is running as expected. This puts the users in control
 motorcycles = []
 motorcycles.append('honda')
 motorcycles.append('yamaha')
 motorcycles.append('suzuki')
 print(motorcycles)
 
-# add a new element to any position using the insert() method, must specify the index of the new element and the value of the new item
+# add a new element to any position using the insert() method, must specify the 
+# index of the new element and the value of the new item
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.insert(0, 'ducati')
 print(motorcycles)
 
 # remove items from a list 
-# if you know the position of the item you want to remove you use the del statement
+# if you know the position of the item you want to remove you use the del 
+# statement
 del motorcycles[0]
 print(motorcycles)
 
 # removing an item using the pop() method
-# pop() removes the last item in a list, but it lets you work with that item after removing it.
+# pop() removes the last item in a list, but it lets you work with that 
+# item after removing it.
 motorcycles = ['honda', 'yamaha', 'suzuki']
 popped_motorcycle = motorcycles.pop()
 print(motorcycles)
@@ -102,7 +139,8 @@ print("The last motorcycle I owned was a " + last_owned.title() + ".")
 first_owned = motorcycles.pop(0)
 print('The first motorcycle I owned was a ' + first_owned.title() + '.')
 
-# if you don't know the position of the value you want to remove you can use the remove() method if you know the value
+# if you don't know the position of the value you want to remove you can use 
+# the remove() method if you know the value
 motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
 motorcycles.remove('ducati')
 print(motorcycles)
@@ -114,7 +152,8 @@ motorcycles.remove(too_expensive)
 print(motorcycles)
 print("\nA " + too_expensive.title() + " is too expensive for me.")
 
-# remove only deletes the first occurrence of the value specified. If the value appears more than once in the list you need to use a loop - see chapter 7
+# remove only deletes the first occurrence of the value specified. If the value 
+# appears more than once in the list you need to use a loop - see chapter 7
 
 # Exercise 3-4 Guest List
 '''
@@ -131,8 +170,8 @@ print("I'd like to invie " + dinner_guests[2] + " to my dinner party.")
 
 # Exercise 3-5 Changing Guest List
 '''You just heard that one of your guests can't make the
-dinner, so you need to send out a new set of invitations. You'll have to think of
-someone else to invite.
+dinner, so you need to send out a new set of invitations. You'll have to think 
+of someone else to invite.
 
 -> Start with your program from Exercise 3-4. Add a print statement at the
 end of your program stating the name of the guest who can't make it.
@@ -147,7 +186,11 @@ print("I'd like to invie " + dinner_guests[0] + " to my dinner party.")
 print("I'd like to invie " + dinner_guests[1] + " to my dinner party.")
 print("I'd like to invie " + dinner_guests[2] + " to my dinner party.")
 
-print(dinner_guests[2] + " has informed the host that " + dinner_guests[0] + " can't make it. He sends his apologies.")
+print(dinner_guests[2] + 
+    " has informed the host that " + 
+    dinner_guests[0] + 
+    " can't make it. He sends his apologies."
+)
 
 del dinner_guests[0]
 dinner_guests.append('Hilo Rose Mangum')
@@ -173,7 +216,10 @@ bigger dinner table.
 
 -> Print a new set of invitation messages, one for each person in your list.
 '''
-print(dinner_guests[0] + ", " + dinner_guests[1] + ", and " + dinner_guests[2] + " I have found a bigger table and three more guests will be joining us for dinner")
+print(dinner_guests[0] + 
+    ", " + dinner_guests[1] + 
+    ", and " + dinner_guests[2] + 
+    " I have found a bigger table and more guests will be joining our dinner")
 
 dinner_guests.insert(0, 'Hunter S. Thompson')
 dinner_guests.insert(2, 'Joseph Hernandez')
@@ -206,7 +252,8 @@ know they're still invited.
 list. Print your list to make sure you actually have an empty list at the end
 of your program.
 '''
-print("I can only invite two people to dinner now, as my new table will not arrive in time")
+print("I can only invite two people to dinner now," 
+    "as my new table will not arrive in time")
 
 first_removed = dinner_guests.pop(2)
 print("I am sorry to have un-invited you, " + first_removed + ".")
@@ -220,7 +267,11 @@ print("I am sorry to have un-invited you, " + third_removed + ".")
 fourth_removed = dinner_guests.pop(2)
 print("I am sorry to have un-invited you, " + fourth_removed + ".")
 
-print(dinner_guests[0] + " and " + dinner_guests[1] + " you both are still invited to dinner.")
+print(dinner_guests[0] + 
+    " and " + 
+    dinner_guests[1] + 
+    " you both are still invited to dinner.")
+
 del dinner_guests[:]
 print(dinner_guests)
 
@@ -242,7 +293,8 @@ print(sorted(cars))
 print("\nHere is the original list again:")
 print(cars)
 
-# sorting a list alphabetically is more complicated when all the values are not lowercase.
+# sorting a list alphabetically is more complicated when all the values 
+# are not lowercase.
 
 # print the list in reverse order
 cars.reverse()
@@ -252,33 +304,42 @@ print(cars)
 '''
 Think of at least five places in the world you'd like to visit.
 
--> Store the locations in a list. Make sure the list is not in alphabetical order.
+-> Store the locations in a list. Make sure the list is not in 
+alphabetical order.
 
--> Print your list in its original order. Don't worry about printing the list neatly,
-just print it as a raw Python list.
+-> Print your list in its original order. Don't worry about printing the 
+list neatly, just print it as a raw Python list.
 
 -> Use sorted() to print your list in alphabetical order without modifying the
 actual list.
 
 -> Show that your list is still in its original order by printing it.
 
--> Use sorted() to print your list in reverse alphabetical order without changing the order of the original list.
+-> Use sorted() to print your list in reverse alphabetical order without 
+changing the order of the original list.
 
 -> Show that your list is still in its original order by printing it again.
 
--> Use reverse() to change the order of your list. Print the list to show that its
-order has changed.
+-> Use reverse() to change the order of your list. Print the list to show 
+that its order has changed.
 
 -> Use reverse() to change the order of your list again. Print the list to show
 it's back to its original order.
 
--> Use sort() to change your list so it's stored in alphabetical order. Print the
-list to show that its order has been changed.
+-> Use sort() to change your list so it's stored in alphabetical order. Print 
+the list to show that its order has been changed.
 
 -> Use sort() to change your list so it's stored in reverse alphabetical order.
 Print the list to show that its order has changed.
 '''
-world_vacations = ["Egypt", "Spain", "Colombia", "Greece", "Indonesia", "Vietnam"]
+world_vacations = [
+    "Egypt", 
+    "Spain", 
+    "Colombia", 
+    "Greece", 
+    "Indonesia", 
+    "Vietnam"
+]
 print(world_vacations)
 
 print(sorted(world_vacations))
@@ -317,8 +378,8 @@ print(f"I am inviting {len(dinner_guests)} guests to dinner.")
 '''
 Think of something you could store in a list. For example,
 you could make a list of mountains, rivers, countries, cities, languages, or 
-anything else you'd like. Write a program that creates a list containing these items
-and then uses each function introduced in this chapter at least once.
+anything else you'd like. Write a program that creates a list containing these 
+items and then uses each function introduced in this chapter at least once.
 '''
 favorite_cuisines = [
     "Mexican", 
@@ -356,5 +417,7 @@ print(favorite_cuisines)
 favorite_cuisines.sort()
 print(favorite_cuisines)
 
-# if you're getting errors when working with lists, print the list or ask for the len of the list. The list you're working with may be different than you thought.
+# if you're getting errors when working with lists, print the list or ask 
+# for the len of the list. The list you're working with may be different 
+# than you thought.
 
