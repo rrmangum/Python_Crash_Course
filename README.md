@@ -6,7 +6,6 @@ This repo is a collection of Python learning and practice exercises from this [b
 
 # Topics
 
-* Chapter 1 Getting Started
 * Chapter 2 Variables and Simple Data Types
 * Chapter 3 Introducing Lists
 * Chapter 4 Working With Lists
