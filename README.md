@@ -12,7 +12,7 @@ This repo is a collection of Python learning and practice exercises from this [b
 * [Chapter 5: If Statements](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_5.py)
 * [Chapter 6: Dictionaries](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_6.py)
 * [Chapter 7: User Input and While Loops](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_7.py)
-* Chapter 8: Functions
+* [Chapter 8: Functions](https://github.com/rrmangum/Python_Crash_Course/blob/main/Chapter_8.py)
 * Chapter 9: Classes
 * Chapter 10: Files and Exceptions
 * Chapter 11: Testing Your Code
